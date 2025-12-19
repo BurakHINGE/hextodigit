@@ -29,8 +29,8 @@ HexToDigit is a simple Java-based application that converts hexadecimal (base-16
 
 ### 📝 Usage
 ```bash
-javac HexToDigit.java
-java HexToDigit
+javac eng_hexToDigit.java
+java eng_hexToDigit
 ```
 
 ---
@@ -47,8 +47,8 @@ HexToDigit, onaltılık (hexadecimal, taban-16) sayıları onluk (decimal, taban
 
 ### 📝 Kullanım
 ```bash
-javac HexToDigit.java
-java HexToDigit
+javac tr_hexToDigit.java
+java tr_hexToDigit
 ```
 ## 📌 Version History / Sürüm Geçmişi
 
