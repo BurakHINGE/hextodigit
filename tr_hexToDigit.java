@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class hextodigit {
+public class tr_hexToDigit {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

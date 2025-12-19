@@ -1,12 +1,12 @@
 # HexToDigit / Hexadecimal Dönüştürücü
 
-![Java](https://img.shields.io/badge/Java-17+-orange) ![MIT License](https://img.shields.io/badge/License-MIT-green) ![Language](https://img.shields.io/badge/Language-Java-orange)
+![Java](https://img.shields.io/badge/Java-17+-orange) ![MIT License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
 ## 📌 Sürüm Bilgisi | Version Info  
- ● Current Version: 1.0.0  
- ● Geçerli Sürüm: 1.0.0
+ ● Current Version: 1.1.0  
+ ● Geçerli Sürüm: 1.1.0
 
 ---
  
@@ -52,7 +52,10 @@ java HexToDigit
 ```
 ## 📌 Version History / Sürüm Geçmişi
 
-### v1.0.0 – 2025-12-19
+### v1.1.0 - 2025-12-19
+- English has been added as language. / İngilizce dili eklendi.
+
+### v1.0.0 – 2025-11-26
 - Initial release of the hexadecimal to decimal converter. / Hexadecimal–decimal dönüştürücünün ilk sürümü yayınlandı.
 
 ---
