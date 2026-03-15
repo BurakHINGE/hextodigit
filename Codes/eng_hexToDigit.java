@@ -1,3 +1,4 @@
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class eng_hexToDigit {
@@ -5,22 +6,24 @@ public class eng_hexToDigit {
 
         Scanner input = new Scanner(System.in);
 
-        String hex;
-        
-        while (true) {
-            System.out.println("Enter the hexadecimal value you want to calculate: ");
-            hex = input.nextLine();
+        while(true) {
 
-            if (isValidHex(hex)) {
-                break;
-            }
-            else {
-                System.out.println("Invalid input. Please use values between (0-9) and (a-f, A-F).");
-            }
-        }
+            String hex;
+            
+            while (true) {
+                System.out.println("Enter the hexadecimal value you want to calculate: ");
+                hex = input.nextLine();
 
-        System.out.println("The integer value of the hexadecimal number " + hex + " is: " + hexToDecimal(hex));
-   
+                if (isValidHex(hex)) {
+                    break;
+                }
+                else {
+                    System.out.println("Invalid input. Please use values between (0-9) and (a-f, A-F).");
+                }
+            }
+
+            System.out.println("The integer value of the hexadecimal number " + hex + " is: " + hexToDecimal(hex));
+        }    
     }
 
     public static boolean isValidHex(String value) {
@@ -44,8 +47,8 @@ public class eng_hexToDigit {
         return true;
     }
 
-    public static int hexToDecimal(String hex) {
-        int result = 0;
+    public static BigInteger hexToDecimal(String hex) {
+        BigInteger result = BigInteger.ZERO;
 
         for (int i = 0; i < hex.length(); i++) {
             char c = hex.charAt(i);
@@ -62,10 +65,11 @@ public class eng_hexToDigit {
                 value = (c - 'A') + 10;
             }
             else {
-                return -1;
+                return BigInteger.ONE;
             }
 
-            result = result * 16 + value;
+            result = (BigInteger.valueOf(16).multiply(result)).add(BigInteger.valueOf(value));
+
         }
 
         return result;
