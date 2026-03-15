@@ -5,8 +5,8 @@
 ---
 
 ## 📌 Sürüm Bilgisi | Version Info  
- ● Current Version: 1.1.0  
- ● Geçerli Sürüm: 1.1.0
+ ● Current Version: 1.2.0  
+ ● Geçerli Sürüm: 1.2.0
 
 ---
  
@@ -23,7 +23,8 @@ HexToDigit is a simple Java-based application that converts hexadecimal (base-16
 
 ### 🚀 Features
 - Converts hexadecimal numbers (0–9, A–F) to decimal  
-- Case-insensitive input support (a–f / A–F)  
+- Case-insensitive input support (a–f / A–F)
+- Using BigInteger for big numbers  
 - Input validation for invalid characters  
 - Console-based interaction  
 
@@ -42,6 +43,7 @@ HexToDigit, onaltılık (hexadecimal, taban-16) sayıları onluk (decimal, taban
 ### 🚀 Özellikler
 - Hexadecimal sayıları (0–9, A–F) decimal sayılara çevirir  
 - Büyük/küçük harf duyarsızdır (a–f / A–F)  
+- Büyük sayılar için BigInteger kullanılıyor
 - Geçersiz karakterler için kontrol yapar  
 - Konsol üzerinden çalışır  
 
@@ -52,11 +54,11 @@ java tr_hexToDigit
 ```
 ## 📌 Version History / Sürüm Geçmişi
 
-### v1.1.0 - 2025-12-19
-- English has been added as language. / İngilizce dili eklendi.
-
-### v1.0.0 – 2025-11-26
-- Initial release of the hexadecimal to decimal converter. / Hexadecimal–decimal dönüştürücünün ilk sürümü yayınlandı.
+| Version | Date       | Description |
+|--------:|------------|-------------|
+| v1.2.0  | 2026-03-16 | More efficient with BigInteger |  
+| v1.1.0  | 2026-12-19 | English has been added as language |
+| v1.0.0  | 2025-11-26 | Initial release of the hexadecimal to decimal converter |
 
 ---
 
