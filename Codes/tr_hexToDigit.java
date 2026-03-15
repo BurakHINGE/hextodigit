@@ -1,27 +1,29 @@
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class tr_hexToDigit {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+        while(true) {
 
-        String hex;
-        
-        while (true) {
-            System.out.println("Hesaplamak istediğiniz hexadecimal değeri giriniz: ");
-            hex = input.nextLine();
+            Scanner input = new Scanner(System.in);
 
-            if (isValidHex(hex)) {
-                break;
+            String hex;
+            
+            while (true) {
+                System.out.println("Hesaplamak istediğiniz hexadecimal değeri giriniz: ");
+                hex = input.nextLine();
+
+                if (isValidHex(hex)) {
+                    break;
+                }
+                else {
+                    System.out.println("Hatalı giriş lütfen (0-9) ve (a-f,A-F) arası değerler kullanın.");
+                }
             }
-            else {
-                System.out.println("Hatalı giriş lütfen (0-9) ve (a-f,A-F) arası değerler kullanın.");
-            }
-        }
 
-
-        System.out.println(hex + " hexadecimal sayısının tam sayı karşılığı: " + hexToDecimal(hex));
-   
+            System.out.println(hex + " hexadecimal sayısının tam sayı karşılığı: " + hexToDecimal(hex)); 
+        }    
     }
 
     public static boolean isValidHex(String value) {
@@ -42,11 +44,12 @@ public class tr_hexToDigit {
                 return false;
             }
         }
+
         return true;
     }
 
-    public static int hexToDecimal(String hex) {
-        int result = 0;
+    public static BigInteger hexToDecimal(String hex) {
+        BigInteger result = BigInteger.ZERO;
 
         for (int i = 0; i < hex.length(); i++) {
             char c = hex.charAt(i);
@@ -63,14 +66,13 @@ public class tr_hexToDigit {
                 value = (c - 'A') + 10;
             }
             else {
-                return -1;
+                return BigInteger.ONE;
             }
 
-            result = result * 16 + value;
+            result = (BigInteger.valueOf(16).multiply(result)).add(BigInteger.valueOf(value));
 
         }
 
         return result;
-
     }
 }
