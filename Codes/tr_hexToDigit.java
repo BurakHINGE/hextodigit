@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class tr_hexToDigit {
     public static void main(String[] args) {
 
-        while(true) {
+        Scanner input = new Scanner(System.in);
 
-            Scanner input = new Scanner(System.in);
+        while(true) {
 
             String hex;
             
